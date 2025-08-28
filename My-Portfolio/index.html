@@ -140,9 +140,9 @@
         <h2>Hire Me!</h2>
         <legend>Project Details</legend>
         <br />
-        <label for="jobquestion">What type of work do you need?</label>
+        <label for="job_question">What type of work do you need?</label>
         <br />
-        <select id="jobquestion" name="jobquestion">
+        <select id="job_question" name="job_question">
           <option value="Website">Website</option>
           <option value="Web App">Web App</option>
           <option value="Bugg Fixes">Bugg Fixes</option>
@@ -150,7 +150,7 @@
         </select>
         <br />
         <div>
-          <label for="technologiesquestion"
+          <label for="technologies_question"
             >What technologies are involved?
           </label>
           <br />
@@ -170,9 +170,9 @@
           <input type="checkbox" id="node.js" />
         </div>
         <br />
-        <label for="describeproject">Describe your project:</label>
+        <label for="describe_project">Describe your project:</label>
         <textarea
-          name="describeproject"
+          name="describe_project"
           id="describeproject"
           rows="10"
           cols="10"
@@ -194,8 +194,8 @@
         <input type="radio" id="asap" name="urgency" value="radio" />
         <label for="asap">Asap</label>
 
-        <input type="radio" id="within2weeks" name="urgency" value="radio" />
-        <label for="within2weeks">Within 2 weeks</label>
+        <input type="radio" id="within_2weeks" name="urgency" value="radio" />
+        <label for="within_2weeks">Within 2 weeks</label>
 
         <input type="radio" id="flexible" name="urgency" value="radio" />
         <label for="flexible">Flexible</label>
@@ -217,19 +217,66 @@
             placeholder="E.g HasseJohn@gmail.com"
           />
           <br />
-          <label for="companyorganization">Comapany or Organization:</label>
+          <label for="company_organization">Comapany or Organization:</label>
           <input
             type="text"
-            id="companyorganization"
+            id="companyor_ganization"
             placeholder="E.g Nti Gymnasium"
           />
           <br />
-          <label for="fileupload">Upload file here!</label>
-          <input type="file" id="fileupload" />>
+          <label for="fileu_pload">Upload file here!</label>
+          <input type="file" id="file_upload" />>
         </fieldset>
       </section>
 
       <button type="submit">Send request</button>
     </form>
+    <br />
+    <section id="audio">
+      <h2>Choosen Audio</h2>
+      <p>Some chill beats to relax too</p>
+      <section id="background_music">
+        <audio controls loop>
+          <source src="./assets/image/lofi.mp3" type="audio/mp3" />
+          <source src="./assets/image/lofi.ogg" type="audio/ogg" />
+          Your browser does not support the audio element.
+        </audio>
+        <br />
+        <audio controls loop>
+          <source src="./assets/image/Trumpet.mp3" type="audio/mp3" />
+          <source src="./assets/image/Trumpet.mp3" type="audio/ogg" />
+          Your browser does not support the audio element.
+        </audio>
+      </section>
+    </section>
+
+    <br />
+    <section id="video">
+      <h2>Choosen Videos</h2>
+      <p>Some videos I like</p>
+      <section id="Introduction_Video">
+        <video
+          controls
+          poster="assets/image/windowsdoor.jpg"
+          height="240"
+          width="320"
+        >
+          <source src="./assets/image/hawaii.mp4" type="video/mp4" />
+          <source src="./assets/image/hawaii.webm" type="video/webm" />
+          Your browser does not support the video tag.
+        </video>
+        <br />
+        <video
+          controls
+          poster="./assets/image/mountain.jpg"
+          height="240"
+          width="320"
+        >
+          <source src="./assets/image/animal.mp4" type="video/mp4" />
+          <source src="./assets/image/animal.webm" type="video/webm" />
+          Your browser does not support the video tag.
+        </video>
+      </section>
+    </section>
   </body>
 </html>
