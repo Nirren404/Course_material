@@ -134,5 +134,102 @@
         >My Github Profile</a
       >
     </footer>
+    <br />
+    <form>
+      <fieldset>
+        <h2>Hire Me!</h2>
+        <legend>Project Details</legend>
+        <br />
+        <label for="jobquestion">What type of work do you need?</label>
+        <br />
+        <select id="jobquestion" name="jobquestion">
+          <option value="Website">Website</option>
+          <option value="Web App">Web App</option>
+          <option value="Bugg Fixes">Bugg Fixes</option>
+          <option value="Consultation">Consultation</option>
+        </select>
+        <br />
+        <div>
+          <label for="technologiesquestion"
+            >What technologies are involved?
+          </label>
+          <br />
+          <label for="html">Html:</label>
+          <input type="checkbox" id="html" />
+
+          <label for="css">CSS:</label>
+          <input type="checkbox" id="css" />
+
+          <label for="javascript">Javascript:</label>
+          <input type="checkbox" id="javascript" />
+
+          <label for="react">React:</label>
+          <input type="checkbox" id="react" />
+
+          <label for="node.js">Node.js:</label>
+          <input type="checkbox" id="node.js" />
+        </div>
+        <br />
+        <label for="describeproject">Describe your project:</label>
+        <textarea
+          name="describeproject"
+          id="describeproject"
+          rows="10"
+          cols="10"
+        ></textarea>
+      </fieldset>
+
+      <fieldset>
+        <legend>Budget & Timeline</legend>
+
+        <label for="budget">Budget:</label>
+        <input
+          type="text"
+          name="budget"
+          id="budget"
+          placeholder="E.g 50,000€"
+        />
+        <br />
+        <label for="urgency">Urgency:</label>
+        <input type="radio" id="asap" name="urgency" value="radio" />
+        <label for="asap">Asap</label>
+
+        <input type="radio" id="within2weeks" name="urgency" value="radio" />
+        <label for="within2weeks">Within 2 weeks</label>
+
+        <input type="radio" id="flexible" name="urgency" value="radio" />
+        <label for="flexible">Flexible</label>
+      </fieldset>
+
+      <section>
+        <fieldset>
+          <legend>Your information</legend>
+
+          <label for="fullname">Your name:</label>
+          <input type="text" id="fullname" required placeholder="Full name" />
+          <br />
+
+          <label for="Email">Your Email:</label>
+          <input
+            type="email"
+            id="Email"
+            required
+            placeholder="E.g HasseJohn@gmail.com"
+          />
+          <br />
+          <label for="companyorganization">Comapany or Organization:</label>
+          <input
+            type="text"
+            id="companyorganization"
+            placeholder="E.g Nti Gymnasium"
+          />
+          <br />
+          <label for="fileupload">Upload file here!</label>
+          <input type="file" id="fileupload" />>
+        </fieldset>
+      </section>
+
+      <button type="submit">Send request</button>
+    </form>
   </body>
 </html>
