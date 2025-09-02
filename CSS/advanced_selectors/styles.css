@@ -1,0 +1,44 @@
+/* 1 */
+#main-title {
+  color: green;
+}
+
+/* 2 */
+p {
+  font-size: 18px;
+}
+
+/* 3*/
+.animals ul > li {
+  list-style-type: circle;
+}
+
+/* 4 */
+ul li:first-child {
+  font-weight: bold;
+}
+
+/* 5 */
+.highlight {
+  background-color: yellow;
+}
+
+/* 6 */
+h1 + p {
+  font-style: italic;
+}
+
+/* 7 */
+ul li:nth-child(even) {
+  background-color: lightgrey;
+}
+
+/* 8 */
+footer p {
+  border: 5px red double;
+}
+
+/* 9*/
+.animals > ul:first-of-type > li::before {
+  content: "🐒";
+}
