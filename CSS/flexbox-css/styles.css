@@ -1,0 +1,28 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+section.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .box1 {
+    background-color: red;
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  .box2 {
+    background-color: blue;
+  }
+
+  .box3 {
+    background-color: green;
+  }
+
+  .box4 {
+    background-color: yellow;
+  }
+}

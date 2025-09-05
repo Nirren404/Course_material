@@ -1,0 +1,28 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+span {
+  display: block;
+}
+
+.body {
+  padding: 20px;
+}
+
+.box {
+  width: 300px;
+  height: 300px;
+  border: 1px solid black;
+}
+
+.box1 {
+  background-color: red;
+  position: relative;
+}
+
+.box2 {
+  background-color: yellow;
+}
