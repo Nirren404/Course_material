@@ -1,0 +1,96 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.hero-section {
+  height: 100vh;
+  background-image: linear-gradient(
+    180deg,
+    rgb(132, 94, 194) 0%,
+    rgb(214, 93, 177) 35%,
+    rgb(255, 150, 113) 100%
+  );
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  text-align: center;
+}
+
+.hero-section > h1 {
+  color: black;
+  font-family: "nonito", sans-serif;
+  padding: 20px;
+}
+
+body > h1 {
+  color: #ecf;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "nonito", sans-serif;
+  padding: 20px;
+}
+
+h1 + p {
+  font-family: "roboto", sans-serif;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+.gradient-1 {
+  width: 300px;
+  height: 300px;
+  background: #22c1c3;
+  background: linear-gradient(
+    90deg,
+    rgba(34, 193, 195, 1) 0%,
+    rgba(253, 187, 45, 1) 100%
+  );
+  font-family: "nunito", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #000;
+}
+
+.gradient-2 {
+  width: 300px;
+  height: 300px;
+  background: #fc0000;
+  background: linear-gradient(
+    135deg,
+    rgba(252, 0, 0, 1) 17%,
+    rgba(5, 230, 250, 1) 42%,
+    rgba(250, 250, 7, 1) 62%,
+    rgba(0, 255, 34, 1) 100%
+  );
+  font-family: "roboto", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #000;
+}
+
+.gradient-btn {
+  font-size: 16px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-weight: bold;
+  cursor: pointer;
+  width: 200px;
+  height: 50px;
+  background: radial-gradient(circle, rgb(255, 0, 0) 0%, rgb(2, 124, 247) 100%);
+  transition: opacity 0.3s ease-in-out;
+}
+
+.gradient-btn:hover {
+  opacity: 0.8;
+  background: radial-gradient(
+    circle,
+    rgb(21, 254, 0) 0%,
+    rgb(2, 124, 247) 100%
+  );
+}
