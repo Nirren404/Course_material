@@ -1,0 +1,11 @@
+header h1 {
+  height: 30vh;
+  background-image: linear-gradient(180deg rg);
+
+  color: black;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+}
