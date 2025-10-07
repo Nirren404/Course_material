@@ -101,3 +101,91 @@ const renderThumbs = (items) => {
 };
 
 renderThumbs(photos);
+
+// Helpers
+
+const setMain = (index) => {
+  const { src, alt, caption } = photos[index];
+  mainImage.src = src;
+  mainImage.alt = alt;
+  captionEL.textContent = caption || alt;
+
+  thumbsEL
+    .querySelectorAll("li")
+    .forEach((li) => li.classList.remove("active"));
+  const activeLi = thumbsEL.children[index];
+  if (activeLi) activeLi.classList.add("active");
+
+  mainImage.dataset.activeIndex = String(index);
+};
+
+setMain(0);
+
+const clampIndex = (i) => {
+  return (i + photos.length) % photos.length;
+};
+// delegate thumbnails
+
+thumbsEL.addEventListener("click", (e) => {
+  const img = e.target.closest("img");
+  if (!img) return;
+  setMain(Number(img.dataset.index));
+});
+
+thumbsEL.addEventListener("keydown", (e) => {
+  if (e.key === "Enter" || e.key === " ") {
+    thumbsEL.addEventListener("click", (e) => {
+      if (img) setMain(Number(img.dataset.index));
+    });
+  }
+});
+
+// keyboard navigation
+
+document.addEventListener("keydown", (e) => {
+  if (lightbox.open) return;
+  if (e.key === "ArrowRight" || e.key === "ArrowLeft") {
+    const current = Number(mainImage.dataset.activeIndex || 0);
+    const next =
+      e.key === "ArrowRight"
+        ? clampIndex(current + 1)
+        : clampIndex(current - 1);
+    setMain(next);
+    const activeThumb = thumbsEL.querySelector(`img[data-index="${next}"]`);
+    if (activeThumb) activeThumb;
+  }
+});
+
+// Lightbox - modal
+
+mainImage.addEventListener("click", () => {
+  lightboxImage.src = mainImage.src;
+  lightboxImage.alt = mainImage.alt;
+  lightboxCaption.textContent = captionEL.textContent;
+  lightbox.showModal();
+});
+
+closelightBox.addEventListener("click", () => {
+  lightbox.close();
+});
+
+document.addEventListener("keydown", (e) => {
+  if (e.key === "Escape" && lightbox.open) lightbox.close();
+});
+
+lightbox.addEventListener("click", (e) => {
+  const clickOutside = [lightboxImage, lightboxCaption, closelightBox].includes(
+    e.target
+  );
+  if (!clickOutside) lightbox.close();
+});
+
+// back to top button
+
+window.addEventListener("scroll", () => {
+  topbtn.style.display = window.scrollY > 300 ? "block" : "none";
+});
+
+topbtn.addEventListener("click", () => {
+  window.scrollTo({ top: 0, behavior: "smooth" });
+});
