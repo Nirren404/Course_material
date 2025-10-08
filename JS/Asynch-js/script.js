@@ -89,4 +89,31 @@ async function greetLater() {
 }
 greetLater();
 
-// Fetch both users and posts from the API and log them together using Promise.all().
+// Fetch both users and posts from the API and log them together! using Promise.all().
+async function loadData() {
+  const [user, posts] = await Promise.all([
+    fetch("https://jsonplaceholder.typicode.com/users/1").then((r) => r.json()),
+    fetch("https://jsonplaceholder.typicode.com/posts?userId=1").then((r) =>
+      r.json()
+    ),
+  ]);
+
+  console.log(user, posts);
+}
+
+loadData();
+
+//Write a function that retries fetching data up to 3 times if it fails.
+async function getdataTest(url, retries = 3) {
+  for (let i = 0; i < retries; i++) {
+    try {
+      const response = await fetch(url);
+      if (!response.ok) throw new Error("Fetch failed");
+      return await response.json();
+    } catch (error) {
+      console.log(`Attempt ${i + 1} failed. Retrying...`);
+      if (i === retries - 1) throw error;
+    }
+  }
+}
+getdataTest("https://jsonplaceholder.typicode.com/posts/1");
