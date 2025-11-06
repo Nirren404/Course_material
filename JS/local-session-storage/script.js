@@ -74,7 +74,6 @@ window.addEventListener("load", () => {
 });
 
 // ! C-1-2
-
 const todoForm = document.querySelector("form");
 const todoInput = document.querySelector("#todo");
 const todoList = document.createElement("ul");

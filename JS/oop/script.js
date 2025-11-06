@@ -87,9 +87,6 @@ account1.withdraw(500);
 account1.withdraw(10);
 
 // * C-1-2-3
-
-// * Create an Animal base class with a makeSound() method. Create subclasses like Dog, Cat, Bird that override makeSound().
-
 class Animal {
   makeSound() {
     console.log("Some generic animal sound");
