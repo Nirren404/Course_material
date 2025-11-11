@@ -1,4 +1,7 @@
-console.log("Hello, TypeScript!");
+import { projectInfo } from "./modules/data.js";
 
-const myName: string = "World Champiåfolefhadkhfköjhfskjöh";
-console.log(`Hello, ${myName}!`);
+const { name, version, description } = projectInfo;
+
+console.log(`Project: ${name}`);
+console.log(`Version: ${version}`);
+console.log(`About: ${description}`);
