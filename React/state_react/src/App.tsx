@@ -1,3 +1,4 @@
+import MovieListComponent from "./components/exercises/movie.list.component";
 import ProfileCardComponent from "./components/exercises/profile.card.component";
 import ToogleLightDarkComponent from "./components/exercises/tooglelightdark.component";
 import CounterExcercise3Component from "./components/exercises/counter.exercise3.component";
@@ -35,6 +36,8 @@ function App() {
       <ToogleLightDarkComponent />
       <hr />
       <ProfileCardComponent />
+      <hr />
+      <MovieListComponent />
     </div>
   );
 }

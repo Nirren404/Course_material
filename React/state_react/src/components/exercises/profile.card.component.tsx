@@ -1,28 +1,32 @@
 import { useState } from "react";
 
 const ProfileCardComponent = () => {
-  const [profile, setProfile] = useState({
-    firstName: "",
-    lastName: "",
-    age: 0,
+  const [user, setUser] = useState<{ name: string; age: number }>({
+    name: "Alice",
+    age: 25,
   });
 
-  return (
-    <div>
-      <h2>Profile Card</h2>
+  const changeName = () => {
+    const names = ["Alice", "Bob", "Charlie", "Diana"];
+    const currentIndex = names.indexOf(user.name);
+    const nextIndex = (currentIndex + 1) % names.length;
+    setUser({ ...user, name: names[nextIndex] });
+  };
 
-      <button onClick={() => setProfile({ ...profile, age: profile.age + 1 })}>
-        ➕
-      </button>
+  const increaseAge = () => {
+    setUser({ ...user, age: user.age + 1 });
+  };
+
+  return (
+    <div className="profile-card">
+      <h2>Profile Card Component</h2>
+      <p>
+        Name: {user.name}, Age: {user.age}
+      </p>
+      <button onClick={changeName}>Change Name</button>
+      <button onClick={increaseAge}>Increase Age</button>
     </div>
   );
 };
 
 export default ProfileCardComponent;
-
-/* <h2>Profile Card</h2>
-      <p>Name: {name}</p>
-      <p>Age: {age}</p>
-      <button onClick={() => setAge(age + 1)}>Increase Age</button>
-
-       */
