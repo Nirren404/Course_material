@@ -17,6 +17,10 @@ const ProfileCardComponent = () => {
     setUser({ ...user, age: user.age + 1 });
   };
 
+  const decreaseAge = () => {
+    setUser({ ...user, age: user.age - 1 });
+  };
+
   return (
     <div className="profile-card">
       <h2>Profile Card Component</h2>
@@ -25,6 +29,7 @@ const ProfileCardComponent = () => {
       </p>
       <button onClick={changeName}>Change Name</button>
       <button onClick={increaseAge}>Increase Age</button>
+      <button onClick={decreaseAge}>Decrease Age</button>
     </div>
   );
 };
