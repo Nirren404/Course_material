@@ -1,3 +1,5 @@
+import UserListComponent from "./components/exercises/userList.component";
+import EffectExampleComponent from "./components/effect.example";
 import MovieListComponent from "./components/exercises/movie.list.component";
 import ProfileCardComponent from "./components/exercises/profile.card.component";
 import ToogleLightDarkComponent from "./components/exercises/tooglelightdark.component";
@@ -38,6 +40,10 @@ function App() {
       <ProfileCardComponent />
       <hr />
       <MovieListComponent />
+      <hr />
+      <EffectExampleComponent />
+      <hr />
+      <UserListComponent />
     </div>
   );
 }
