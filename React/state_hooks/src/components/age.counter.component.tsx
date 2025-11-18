@@ -25,3 +25,5 @@ const AgeCounterComponent = () => {
 };
 
 export default AgeCounterComponent;
+
+console.log();
