@@ -1,17 +1,20 @@
+import PreviousValue from "./components/useref.Examples/previous.value";
+import RenderCount from "./components/useref.Examples/render.counter";
+import InputFocus from "./components/useref.Examples/input.focus";
 import UserListComponent from "./components/exercises/userList.component";
-import EffectExampleComponent from "./components/effect.example";
+import EffectExampleComponent from "./components/useeffect.Examples/effect.example";
 import MovieListComponent from "./components/exercises/movie.list.component";
 import ProfileCardComponent from "./components/exercises/profile.card.component";
 import ToogleLightDarkComponent from "./components/exercises/tooglelightdark.component";
 import CounterExcercise3Component from "./components/exercises/counter.exercise3.component";
 import InputMirrorComponent from "./components/exercises/input.mirror.component";
 import GreetingMessageComponent from "./components/exercises/greeting.message.component";
-import ListComponent from "./components/list.component";
-import ContactFormComponent from "./components/contact.form.component";
-import AgeCounterComponent from "./components/age.counter.component";
-import Counter from "./components/counter.component";
-import MyInput from "./components/input.component";
-import LikeButtonComponent from "./components/like.button.component";
+import ListComponent from "./components/useState.Examples/list.component";
+import ContactFormComponent from "./components/useState.Examples/contact.form.component";
+import AgeCounterComponent from "./components/useState.Examples/age.counter.component";
+import Counter from "./components/useState.Examples/counter.component";
+import MyInput from "./components/useState.Examples/input.component";
+import LikeButtonComponent from "./components/useState.Examples/like.button.component";
 function App() {
   return (
     <div className="">
@@ -44,6 +47,12 @@ function App() {
       <EffectExampleComponent />
       <hr />
       <UserListComponent />
+      <hr />
+      <InputFocus />
+      <hr />
+      <RenderCount />
+      <hr />
+      <PreviousValue />
     </div>
   );
 }
