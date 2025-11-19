@@ -1,3 +1,4 @@
+import FocusInputComponent from "./components/exercises/focusinput.component";
 import PreviousValue from "./components/useref.Examples/previous.value";
 import RenderCount from "./components/useref.Examples/render.counter";
 import InputFocus from "./components/useref.Examples/input.focus";
@@ -53,6 +54,8 @@ function App() {
       <RenderCount />
       <hr />
       <PreviousValue />
+      <hr />
+      <FocusInputComponent />
     </div>
   );
 }
