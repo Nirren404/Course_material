@@ -1,3 +1,4 @@
+import PracticePersonalGreetingCard from "./components/exercises/practice.personalgreeting.card";
 import FocusInputComponent from "./components/exercises/focusinput.component";
 import PreviousValue from "./components/useref.Examples/previous.value";
 import RenderCount from "./components/useref.Examples/render.counter";
@@ -56,6 +57,8 @@ function App() {
       <PreviousValue />
       <hr />
       <FocusInputComponent />
+      <hr />
+      <PracticePersonalGreetingCard />
     </div>
   );
 }
