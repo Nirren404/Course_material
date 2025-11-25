@@ -1,3 +1,5 @@
+import StatusLightComponent from "./components/exercises/status.light.component";
+import LoggedInGreetingComponent from "./components/exercises/loggedin.greeting.component";
 import UseCard from "./components/exercises/usecard";
 import PracticePersonalGreetingCard from "./components/exercises/practice.personalgreeting.card";
 import FocusInputComponent from "./components/exercises/focusinput.component";
@@ -12,6 +14,7 @@ import ToogleLightDarkComponent from "./components/exercises/tooglelightdark.com
 import CounterExcercise3Component from "./components/exercises/counter.exercise3.component";
 import InputMirrorComponent from "./components/exercises/input.mirror.component";
 import GreetingMessageComponent from "./components/exercises/greeting.message.component";
+import ShowAdminMessageComponent from "./components/exercises/show.admin.message.component";
 //import ListComponent from "./components/useState.Examples/list.component";
 //import ContactFormComponent from "./components/useState.Examples/contact.form.component";
 //import AgeCounterComponent from "./components/useState.Examples/age.counter.component";
@@ -62,6 +65,12 @@ function App() {
       <PracticePersonalGreetingCard />
       <hr />
       <UseCard />
+      <hr />
+      <LoggedInGreetingComponent />
+      <hr />
+      <StatusLightComponent />
+      <hr />
+      <ShowAdminMessageComponent username="Alice" isAdmin={false} />
     </div>
   );
 }
