@@ -1,5 +1,6 @@
-import TogglingUI from "./components/huge.excercise/toggling.ui";
-import CustomButton from "./components/huge.excercise/custombutton";
+import InteractiveList from "./components/event-handlers_hugeExcercise/interactivelist";
+import TogglingUI from "./components/event-handlers_hugeExcercise/toggling.ui";
+import CustomButton from "./components/event-handlers_hugeExcercise/custombutton";
 // import StatusLightComponent from "./components/exercises/status.light.component";
 // import LoggedInGreetingComponent from "./components/exercises/loggedin.greeting.component";
 // import UseCard from "./components/exercises/usecard";
@@ -80,6 +81,8 @@ function App() {
       />
       <hr />
       <TogglingUI />
+      <hr />
+      <InteractiveList />
     </div>
   );
 }

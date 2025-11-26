@@ -1,5 +1,4 @@
 import React from "react";
-import TogglingUI from "./toggling.ui";
 type CustomButtonProps = {
   label: string;
   onClick: () => void;

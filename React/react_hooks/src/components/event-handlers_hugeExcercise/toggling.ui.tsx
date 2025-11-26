@@ -15,7 +15,7 @@ const TogglingUI = () => {
         onClick={toggleVisibility}
       />
 
-      {isVisible && <div>This is the toggled wow!</div>}
+      {isVisible && <div>hello there! This is the toggle text</div>}
     </div>
   );
 };
