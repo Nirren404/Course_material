@@ -8,6 +8,5 @@ type CustomButtonProps = {
 const CustomButton: React.FC<CustomButtonProps> = ({ label, onClick }) => {
   return <div onClick={onClick}>{label}</div>;
 };
-//
 
 export default CustomButton;
