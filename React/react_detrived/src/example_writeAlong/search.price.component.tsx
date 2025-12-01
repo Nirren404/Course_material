@@ -14,7 +14,6 @@ const SearchPriceComponent = () => {
   const [sortOrder, setSortOrder] = useState<SortOrder>("price-asc");
 
   useEffect(() => {
-    // Simulate fetching data
     if (query === "") setProductsList(products);
   }, [query]);
 
